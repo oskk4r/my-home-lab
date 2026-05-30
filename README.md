@@ -1,5 +1,5 @@
 🏠 My Home Lab
-Witaj w moim osobistym projekcie Home Lab! Jest to miejsce, w którym dokumentuję budowę, konfigurację oraz rozwój mojej infrastruktury serwerowej. Projekt ma na celu naukę wirtualizacji, administracji systemami Linux oraz automatyzacji usług.
+/n Witaj w moim osobistym projekcie Home Lab! Jest to miejsce, w którym dokumentuję budowę, konfigurację oraz rozwój mojej infrastruktury serwerowej. Projekt ma na celu naukę wirtualizacji, administracji systemami Linux oraz automatyzacji usług.
 
 🖥 Specyfikacja Sprzętowa
 Host (Hypervisor): Lenovo Tiny m720q6 x Intel(R) Core(TM) i5-8400T CPU
