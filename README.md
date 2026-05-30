@@ -1,7 +1,8 @@
-##🏠 My Home Lab
-#Witaj w moim osobistym projekcie Home Lab! Jest to miejsce, w którym dokumentuję budowę, konfigurację oraz rozwój mojej infrastruktury serwerowej. Projekt ma na celu naukę wirtualizacji, administracji systemami Linux oraz automatyzacji usług.
+🏠 My Home Lab
 
-#🖥 Specyfikacja Sprzętowa
+Witaj w moim osobistym projekcie Home Lab! Jest to miejsce, w którym dokumentuję budowę, konfigurację oraz rozwój mojej infrastruktury serwerowej. Projekt ma na celu naukę wirtualizacji, administracji systemami Linux oraz automatyzacji usług.
+
+🖥 Specyfikacja Sprzętowa
 Host (Hypervisor): Lenovo Tiny m720q6 x Intel(R) Core(TM) i5-8400T CPU
 
 RAM: 16GB DDR4
@@ -9,7 +10,7 @@ Dysk: 256GB NVMe SSD
 System hosta: Proxmox VE
 
 
-#📖 Dziennik Projektu
+📖 Dziennik Projektu
 Krok 1: Przygotowanie środowiska i dostęp SSH
 Cel: Wdrożenie bazowej maszyny wirtualnej (VM) i zapewnienie zdalnego zarządzania.
 
