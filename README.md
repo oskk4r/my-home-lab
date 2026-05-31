@@ -20,7 +20,7 @@ Witaj w moim osobistym projekcie Home Lab! Jest to miejsce, w którym dokumentuj
 
 ---
 
-## 🌐 Konfiguracja Sieciowa (Proxmox Host)
+## ## 🌐 Konfiguracja Sieciowa (Proxmox Host)
 
 Plik `/etc/network/interfaces` na hoście Proxmox zawiera konfigurację dwóch mostków sieciowych:
 * `vmbr0` – Mostek główny, spięty z fizyczną kartą sieciową (`nic0`), odpowiada za dostęp do sieci domowej i przekierowania portów (SSH, HTTP, HTTPS) do kontenera Portiera.
