@@ -93,10 +93,12 @@ STATUS: ZAKOŃCZONY | ŚRODOWISKO: Docker & Docker Compose | STREFA DOMENOWA: .l
 🕸️ Obsługa Websockets: Skonfigurowanie stabilnego proxy dla domeny proxmox.local z wymuszonym protokołem HTTPS oraz pełną obsługą Websocketów, co ostatecznie wyeliminowało błędy wygasania sesji i tokenów (401: No ticket).
 🔗 Mapowanie panelu NPM: Przypisanie dedykowanej nazwy domeny nginx.local kierującej bezpośrednio na port administracyjny 81, usuwając konieczność ręcznego pamiętania portów.
 
-### 🟡 Krok 3: Wdrożenie Wirtualnego Firewalla
-STATUS: W PLANACH (Backlog) | DOCELOWY SYSTEM: OPNsense / pfSense
+### 🟡 Krok 3: Wdrożenie Wirtualnego Firewalla (OPNsense)
+STATUS: W TRAKCIE | SYSTEM: OPNsense | ARCHITEKTURA: Zero-Trust Management
 
-🌐 Migracja warstwy sieciowej: Przeniesienie całego mechanizmu routingu, translacji adresów (NAT) oraz przekierowań z tekstowego pliku konfiguracyjnego hypervisora do dedykowanego, zwirtualizowanego systemu OS klasy Firewall.
-📊 Głęboka analiza pakietów: Zapewnienie pełnego wglądu w pakiety sieciowe "na żywo", integracja systemów wykrywania/zapobiegania intruzom (IDS/IPS) oraz wdrożenie graficznej tablicy monitorującej blokady sieciowe.
+🌐 Migracja warstwy sieciowej: Przeniesienie routingu oraz translacji adresów (NAT) z iptables do dedykowanego systemu OPNsense.
+🛡️ Zasada "Głuchego WAN-u": Wdrożenie rygorystycznej blokady sieci prywatnych na interfejsie WAN. Całkowita rezygnacja z wystawiania panelu administracyjnego na świat.
+🔑 Architektura Bastion Host: Zaprojektowanie bezpiecznego punktu dostępu (Admin VM) wewnątrz sieci LAN. Zarządzanie firewallem odbywa się wyłącznie poprzez zaufaną strefę, co eliminuje ryzyko ataków na interfejs zarządzający.
+📊 Outbound NAT: Konfiguracja reguł Hybrid Outbound, zapewniająca bezpieczną komunikację labu z Internetem.
 
 ---
