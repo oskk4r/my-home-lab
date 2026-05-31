@@ -49,7 +49,7 @@ iface vmbr0 inet static
 
         post-up iptables -t nat -A PREROUTING -p tcp --dport 81 -j DNAT --to-destination 10.0.0.10:81
         post-down iptables -t nat -D PREROUTING -p tcp --dport 81 -j DNAT --to-destination 10.0.0.10:81
-```
+
 auto vmbr1
 iface vmbr1 inet static
         address 10.0.0.1/24
@@ -60,6 +60,7 @@ iface vmbr1 inet static
         post-up echo 1 > /proc/sys/net/ipv4/ip_forward
         post-up iptables -t nat -A POSTROUTING -s '10.0.0.0/24' -o vmbr0 -j MASQUERADE
         post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/24' -o vmbr0 -j MASQUERADE
+```
 
 ## 📖 Dziennik Projektu & Architektura
 
