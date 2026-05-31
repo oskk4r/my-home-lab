@@ -75,16 +75,16 @@ iface vmbr1 inet static
 ```
 </details>
 
-##📖 Dziennik Projektu & Kamienie Milowe
+###📖 Dziennik Projektu & Kamienie Milowe
 
-###🟢 Krok 1: Przygotowanie Środowiska & Hardening SSH
+##🟢 Krok 1: Przygotowanie Środowiska & Hardening SSH
 STATUS: ZAKOŃCZONY | SYSTEM: Debian 12 Bookworm | PORT SSH: 2222
 
 🏗️ Powołanie maszyny: Wdrożenie bazowej maszyny wirtualnej (VM) o nazwie Reverse-Portier pełniącej rolę bramy sieciowej.
 🔒 Hardening dostępu: Pełne zabezpieczenie demona SSH poprzez całkowite zablokowanie logowania na konto root oraz wyłączenie autoryzacji tradycyjnym hasłem. Ruch dopuszczany jest wyłącznie za pomocą kluczy asymetrycznych.
 🛠️ Routing: Pomyślne przekierowanie dedykowanego portu z firewalla hosta Proxmox bezpośrednio do kontenera w celu bezpiecznego zarządzania zdalnego z pominięciem konsoli NoVNC.
 
-###🟢 Krok 2: Wdrożenie Nginx Reverse Proxy
+##🟢 Krok 2: Wdrożenie Nginx Reverse Proxy
 STATUS: ZAKOŃCZONY | ŚRODOWISKO: Docker & Docker Compose | STREFA DOMENOWA: .local
 
 🐳 Konteneryzacja: Instalacja silnika Docker oraz narzędzia Docker Compose na maszynie brzegowej jako fundamentu pod mikrotransakcje sieciowe.
@@ -93,7 +93,7 @@ STATUS: ZAKOŃCZONY | ŚRODOWISKO: Docker & Docker Compose | STREFA DOMENOWA: .l
 🕸️ Obsługa Websockets: Skonfigurowanie stabilnego proxy dla domeny proxmox.local z wymuszonym protokołem HTTPS oraz pełną obsługą Websocketów, co ostatecznie wyeliminowało błędy wygasania sesji i tokenów (401: No ticket).
 🔗 Mapowanie panelu NPM: Przypisanie dedykowanej nazwy domeny nginx.local kierującej bezpośrednio na port administracyjny 81, usuwając konieczność ręcznego pamiętania portów.
 
-###🟡 Krok 3: Wdrożenie Wirtualnego Firewalla
+##🟡 Krok 3: Wdrożenie Wirtualnego Firewalla
 STATUS: W PLANACH (Backlog) | DOCELOWY SYSTEM: OPNsense / pfSense
 
 🌐 Migracja warstwy sieciowej: Przeniesienie całego mechanizmu routingu, translacji adresów (NAT) oraz przekierowań z tekstowego pliku konfiguracyjnego hypervisora do dedykowanego, zwirtualizowanego systemu OS klasy Firewall.
