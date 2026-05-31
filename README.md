@@ -98,4 +98,5 @@ STATUS: W PLANACH (Backlog) | DOCELOWY SYSTEM: OPNsense / pfSense
 
 🌐 Migracja warstwy sieciowej: Przeniesienie całego mechanizmu routingu, translacji adresów (NAT) oraz przekierowań z tekstowego pliku konfiguracyjnego hypervisora do dedykowanego, zwirtualizowanego systemu OS klasy Firewall.
 📊 Głęboka analiza pakietów: Zapewnienie pełnego wglądu w pakiety sieciowe "na żywo", integracja systemów wykrywania/zapobiegania intruzom (IDS/IPS) oraz wdrożenie graficznej tablicy monitorującej blokady sieciowe.
+
 ---
