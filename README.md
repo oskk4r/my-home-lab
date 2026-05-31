@@ -75,7 +75,7 @@ iface vmbr1 inet static
 ```
 </details>
 
-###📖 Dziennik Projektu & Kamienie Milowe
+####📖 Dziennik Projektu & Kamienie Milowe
 
 ##🟢 Krok 1: Przygotowanie Środowiska & Hardening SSH
 STATUS: ZAKOŃCZONY | SYSTEM: Debian 12 Bookworm | PORT SSH: 2222
